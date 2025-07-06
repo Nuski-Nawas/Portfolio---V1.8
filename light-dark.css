@@ -1,0 +1,41 @@
+/* theme light and dark mode----------------------> */
+.style-switcher 
+{
+  position: fixed;
+  right: 10px;
+  z-index: 101;
+}
+.style-switcher .s-icon
+{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    background: var(--bg-black-100);
+    color: var(--text-black-900);
+    right: 100%;
+    margin-right: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid var(--skin-color);
+    line-height: 40px;
+}
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .style-switcher {
+    top: 30px; /* Adjust top padding for mobile */
+  }
+}
+/* Responsive styles for tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .style-switcher {
+    top: 40px; /* Adjust top padding for tablets */
+  }
+}
+/* Responsive styles for desktop */
+@media (min-width: 1025px) {
+  .style-switcher {
+    top: 52px; /* Default top padding for desktop */
+  }
+}
